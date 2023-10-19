@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 public class StringCalculator
@@ -14,14 +15,11 @@ public class StringCalculator
         }
 
         numbers = UnescapeEscapedNewlines(numbers);
-
         char[] delimiters = GetDelimiters(ref numbers);
-
         string[] numberStrings = SplitNumbers(numbers, delimiters);
-
         CheckForNegativeNumbers(numberStrings);
 
-        return SumNumbers(numberStrings);
+        return numberStrings.Where(n => int.TryParse(n, out _)).Sum(n => int.Parse(n));
     }
 
     private string UnescapeEscapedNewlines(string numbers)
@@ -31,14 +29,13 @@ public class StringCalculator
 
     private char[] GetDelimiters(ref string numbers)
     {
-        char[] delimiters = defaultDelimiters;
         if (numbers.StartsWith("//"))
         {
-            string[] delimiterLine = numbers.Split('\n');
+            var delimiterLine = numbers.Split('\n');
             numbers = delimiterLine[1];
-            delimiters = ParseDelimiters(delimiterLine[0]);
+            return ParseDelimiters(delimiterLine[0]);
         }
-        return delimiters;
+        return defaultDelimiters;
     }
 
     private char[] ParseDelimiters(string delimiterLine)
@@ -51,30 +48,15 @@ public class StringCalculator
         return numbers.Split(delimiters);
     }
 
-    private void CheckForNegativeNumbers(string[] numberStrings)
+    private void CheckForNegativeNumbers(IEnumerable<string> numberStrings)
     {
-        List<int> negativeNumbers = new List<int>();
-        foreach (string numberString in numberStrings)
-        {
-            int number = int.Parse(numberString);
-            if (number < 0)
-            {
-                negativeNumbers.Add(number);
-            }
-        }
-        if (negativeNumbers.Count > 0)
+        var negativeNumbers = numberStrings
+            .Where(n => int.TryParse(n, out int value) && value < 0)
+            .Select(n => int.Parse(n));
+
+        if (negativeNumbers.Any())
         {
             throw new Exception($"Negatives not allowed: {string.Join(",", negativeNumbers)}");
         }
-    }
-
-    private int SumNumbers(string[] numberStrings)
-    {
-        int sum = 0;
-        foreach (string numberString in numberStrings)
-        {
-            sum += int.Parse(numberString);
-        }
-        return sum;
     }
 }
