@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TestStringCalculator
-build_property.ProjectDir = C:\Code\e4Assesment\TestStringCalculator\
+build_property.ProjectDir = C:\e4Assesment\TestStringCalculator\

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\e4Assesment\\e4Assesment\\e4Assesment.csproj": {}
+    "C:\\e4Assesment\\e4Assesment\\e4Assesment.csproj": {}
   },
   "projects": {
-    "C:\\Code\\e4Assesment\\e4Assesment\\e4Assesment.csproj": {
+    "C:\\e4Assesment\\e4Assesment\\e4Assesment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\e4Assesment\\e4Assesment\\e4Assesment.csproj",
+        "projectUniqueName": "C:\\e4Assesment\\e4Assesment\\e4Assesment.csproj",
         "projectName": "e4Assesment",
-        "projectPath": "C:\\Code\\e4Assesment\\e4Assesment\\e4Assesment.csproj",
+        "projectPath": "C:\\e4Assesment\\e4Assesment\\e4Assesment.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\e4Assesment\\e4Assesment\\obj\\",
+        "outputPath": "C:\\e4Assesment\\e4Assesment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
