@@ -1,0 +1,14 @@
+C:\Code\e4Assesment\e4Assesment\bin\Debug\net7.0\e4Assesment.exe
+C:\Code\e4Assesment\e4Assesment\bin\Debug\net7.0\e4Assesment.deps.json
+C:\Code\e4Assesment\e4Assesment\bin\Debug\net7.0\e4Assesment.runtimeconfig.json
+C:\Code\e4Assesment\e4Assesment\bin\Debug\net7.0\e4Assesment.dll
+C:\Code\e4Assesment\e4Assesment\bin\Debug\net7.0\e4Assesment.pdb
+C:\Code\e4Assesment\e4Assesment\obj\Debug\net7.0\e4Assesment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\e4Assesment\e4Assesment\obj\Debug\net7.0\e4Assesment.AssemblyInfoInputs.cache
+C:\Code\e4Assesment\e4Assesment\obj\Debug\net7.0\e4Assesment.AssemblyInfo.cs
+C:\Code\e4Assesment\e4Assesment\obj\Debug\net7.0\e4Assesment.csproj.CoreCompileInputs.cache
+C:\Code\e4Assesment\e4Assesment\obj\Debug\net7.0\e4Assesment.dll
+C:\Code\e4Assesment\e4Assesment\obj\Debug\net7.0\refint\e4Assesment.dll
+C:\Code\e4Assesment\e4Assesment\obj\Debug\net7.0\e4Assesment.pdb
+C:\Code\e4Assesment\e4Assesment\obj\Debug\net7.0\e4Assesment.genruntimeconfig.cache
+C:\Code\e4Assesment\e4Assesment\obj\Debug\net7.0\ref\e4Assesment.dll
